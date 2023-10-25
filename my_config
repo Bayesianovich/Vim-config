@@ -1,5 +1,16 @@
 set nocompatible " not vi compatible
+filetype off
 
+"setting Vindle plugin runtime path
+set rtp+=~/.vim/bundle/Vundle.vim
+" initialize Vundle
+call vundle#begin()
+"All plugins are placed between here
+Plugin 'preservim/nerdtree'
+
+call vundle#end()
+filetype plugin indent on
+autocmd vimenter * NERDTree
 "------------------
 " Syntax and indent
 "------------------
